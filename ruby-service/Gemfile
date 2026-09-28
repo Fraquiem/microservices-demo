@@ -1,0 +1,14 @@
+source "https://rubygems.org"
+
+# A Gemfile is Ruby's dependency list, similar to requirements.txt in Python.
+# Bundler reads it, resolves compatible versions, and records them in Gemfile.lock.
+gem "rails", "~> 8.1.3", ">= 8.1.3.1"
+
+# Active Record uses this adapter to talk to the local SQLite database.
+gem "sqlite3", ">= 2.1"
+
+# Puma is the HTTP server that runs the Rails application.
+gem "puma", ">= 5.0"
+
+# Windows does not ship the IANA time-zone database by default.
+gem "tzinfo-data", platforms: %i[ windows jruby ]
