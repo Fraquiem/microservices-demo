@@ -1,0 +1,20 @@
+# Local databases and process output
+*.sqlite3
+*.sqlite3-*
+*.log
+ruby-service/tmp/*
+!ruby-service/tmp/.keep
+!ruby-service/tmp/pids/
+!ruby-service/tmp/pids/.keep
+!ruby-service/tmp/storage/
+!ruby-service/tmp/storage/.keep
+
+# Installed dependencies and caches
+python-service/.venv/
+**/__pycache__/
+.pytest_cache/
+ruby-service/vendor/bundle/
+ruby-service/.bundle/
+
+# Rails secrets must stay local
+ruby-service/config/master.key
